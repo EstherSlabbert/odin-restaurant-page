@@ -1,0 +1,258 @@
+header {
+  background-image: url("../assets/makomakt-7QOrc12juBI-unsplash-header.jpg");
+  background-size: contain;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.logo-name-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2em;
+  margin-left: 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+#homeBtn,
+#menuBtn,
+#contactBtn {
+  display: inline-block;
+  margin: 2em 0.2em 0em;
+  padding: 1em;
+  color: orange;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: transparent;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+#homeBtn:hover,
+#menuBtn:hover,
+#contactBtn:hover {
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+nav button.active {
+  color: white !important;
+  background-color: rgba(245, 245, 245, 0.288) !important;
+}
+
+footer {
+  color: white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #1e1d23;
+}
+
+/* Home Page */
+
+.review {
+  margin: 1em;
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #d62e3f;
+}
+
+.quote {
+  font-size: 40px;
+  display: inline-block;
+}
+
+.attribution {
+  display: inline-block;
+  margin-left: auto;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.open-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  color: white;
+  background-color: #b02637;
+  padding: 1em;
+}
+
+.open-hours > h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+.day-and-hours-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+}
+
+.day {
+  font-weight: bold;
+}
+
+.hours {
+  margin-left: 15px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.about > h2 {
+  color: #d62e3f;
+  font-size: 30px;
+}
+
+.about-text {
+  margin: 0 4em 1em;
+  font-size: larger;
+  column-count: 2;
+  column-gap: 2em;
+}
+
+/* Contact Page */
+
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  margin: 0;
+  padding: 1em;
+  background-color: orange;
+}
+
+.contact-info {
+  margin-top: 1em;
+  font-size: larger;
+}
+
+.how-and-where {
+  margin: 0.4em;
+}
+
+.how {
+  font-weight: bold;
+}
+
+/* Menu Page */
+.menu {
+  text-align: center;
+  background-image: url("../assets/ed-leszczynskl-KXNTfIg6rVM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+}
+
+.menu p {
+  margin: 0;
+  color: black;
+  font-size: 1em;
+}
+
+.menu h1 {
+  margin: 0 20em;
+  padding: 0.5em;
+  border-radius: 50%;
+  color: white;
+  background-color: orange;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  border: 5px double black;
+  border-radius: 50%;
+}
+
+.menu-container {
+  margin-top: 1em;
+}
+
+.category-items {
+  background-color: white;
+  margin-bottom: 2em;
+  padding: 3em;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #b02637;
+  font-size: 1.5em;
+  font-weight: bolder;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+details[open] > summary {
+  list-style-type: none;
+}
+
+summary::after {
+  content: "";
+  width: 1.1em;
+  height: 1em;
+  background: url("../assets/arrow.svg");
+  background-size: cover;
+  margin-left: 0.5em;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.menu-item img {
+  margin: 0.4em;
+  border: double 4px #000;
+  height: 300px;
+  width: 300px;
+  position: center;
+}
+
+.menu-item {
+  padding: 0.5em;
+}
+
+.menu-afterword {
+  color: white;
+  margin-top: 1em;
+  padding-bottom: 3.5em;
+}
+
+.menu-afterword.hidden {
+  display: none;
+}
