@@ -25,14 +25,14 @@ function menuPage() {
             description:
               "Buttermilk or blueberry pancakes served with maple syrup and a fruit selection.",
             price: "£10.00",
-            image: "../assets/eiliv-aceron-exyTIrXyqm0-unsplash.jpg",
+            image: "./assets/eiliv-aceron-exyTIrXyqm0-unsplash.jpg",
           },
           {
             name: "Omelette",
             description:
               "Made with various fillings like cheese, ham, peppers, onions, mushrooms, and tomatoes.",
             price: "£10.00",
-            image: "../assets/restaurant-1762236_1280.jpg",
+            image: "./assets/restaurant-1762236_1280.jpg",
           },
         ],
       },
@@ -44,20 +44,20 @@ function menuPage() {
             description:
               "A juicy beef patty topped with cheese, lettuce, tomato, onion, pickles, and mayo.",
             price: "£10.00",
-            image: "../assets/osama-bgid-uOsGAtKos8g-unsplash.jpg",
+            image: "./assets/osama-bgid-uOsGAtKos8g-unsplash.jpg",
           },
           {
             name: "BLT",
             description:
               "Bacon, lettuce, and tomato sandwich served on toasted bread with mayo.",
             price: "£10.00",
-            image: "../assets/sandwich-696417_1280.jpg",
+            image: "./assets/sandwich-696417_1280.jpg",
           },
           {
             name: "Grilled Cheese",
             description: "Melted cheese between slices of grilled bread.",
             price: "£10.00",
-            image: "../assets/micheile-henderson-Q-AUYsdKdww-unsplash.jpg",
+            image: "./assets/micheile-henderson-Q-AUYsdKdww-unsplash.jpg",
           },
         ],
       },
@@ -69,13 +69,13 @@ function menuPage() {
             description:
               "Thick-cut onion rings battered and deep-fried until golden brown.",
             price: "£10.00",
-            image: "../assets/pexels-iamabdullahsheik-9738991.jpg",
+            image: "./assets/pexels-iamabdullahsheik-9738991.jpg",
           },
           {
             name: "Fries",
             description: "Classic crispy French fries.",
             price: "£10.00",
-            image: "../assets/emmy-smith-LEjEst7lLfU-unsplash.jpg",
+            image: "./assets/emmy-smith-LEjEst7lLfU-unsplash.jpg",
           },
         ],
       },
@@ -86,14 +86,14 @@ function menuPage() {
             name: "Chocolate Cake",
             description: "Rich chocolate cake served with chocolate frosting.",
             price: "£10.00",
-            image: "../assets/pesce-huang-6TTy4uKh0ck-unsplash.jpg",
+            image: "./assets/pesce-huang-6TTy4uKh0ck-unsplash.jpg",
           },
           {
             name: "Apple Pie Cake",
             description:
               "Classic apple pie cake served warm with a scoop of vanilla ice cream.",
             price: "£10.00",
-            image: "../assets/apple-pie-3594534_1280.jpg",
+            image: "./assets/apple-pie-3594534_1280.jpg",
           },
         ],
       },
@@ -105,27 +105,27 @@ function menuPage() {
             description:
               "A smooth and aromatic blend of freshly ground coffee beans.",
             price: "£10.00",
-            image: "../assets/devin-avery-5iRgh_G0eRY-unsplash.jpg",
+            image: "./assets/devin-avery-5iRgh_G0eRY-unsplash.jpg",
           },
           {
             name: "Hot chocolate",
             description:
               "A comforting blend of rich cocoa powder and steamed milk.",
             price: "£10.00",
-            image: "../assets/zoe-gXtvTOs4tzg-unsplash.jpg",
+            image: "./assets/zoe-gXtvTOs4tzg-unsplash.jpg",
           },
           {
             name: "Milkshakes",
             description:
               "Vanilla, chocolate, or strawberry milkshakes topped with whipped cream.",
             price: "£10.00",
-            image: "../assets/oscar-nord-VnsBx4onRxQ-unsplash.jpg",
+            image: "./assets/oscar-nord-VnsBx4onRxQ-unsplash.jpg",
           },
           {
             name: "Soda",
             description: "Coke, Sprite, or Fanta.",
             price: "£10.00",
-            image: "../assets/qasim-malick-PZsso_IiYRE-unsplash.jpg",
+            image: "./assets/qasim-malick-PZsso_IiYRE-unsplash.jpg",
           },
         ],
       },
@@ -163,28 +163,6 @@ function menuPage() {
 
     return menuItem;
   }
-
-  // // Basic display
-  // function displayMenu(menuData) {
-  //   const menuContainer = document.getElementById("menu");
-
-  //   for (let category in menuData.menu) {
-  //     const categoryData = menuData.menu[category];
-  //     const categoryTitle = document.createElement("h2");
-  //     categoryTitle.textContent = categoryData.title;
-  //     menuContainer.appendChild(categoryTitle);
-
-  //     const categoryItems = document.createElement("div");
-  //     categoryItems.classList.add("category-items");
-
-  //     categoryData.items.forEach((item) => {
-  //       const menuItem = createMenuItem(item);
-  //       categoryItems.appendChild(menuItem);
-  //     });
-
-  //     menuContainer.appendChild(categoryItems);
-  //   }
-  // }
 
   function displayMenu(menuData) {
     const menu = document.getElementById("menu");

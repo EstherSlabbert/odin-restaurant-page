@@ -7,7 +7,7 @@ function setUpHeader() {
   logoNameContainer.classList.add("logo-name-container");
 
   const logo = document.createElement("img");
-  logo.src = "../assets/icons8-restaurant-96.png";
+  logo.src = "./assets/icons8-restaurant-96.png";
   logo.height = 65;
 
   logoNameContainer.appendChild(logo);
