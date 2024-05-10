@@ -47,6 +47,10 @@ module: {
   },
 ```
 
+To run and get build from webpack in dist folder: `npm run build`.
+
+To display in GitHub Pages see this [gist](https://gist.github.com/cobyism/4730490).
+
 ## Acknowledgements
 
 Images:
